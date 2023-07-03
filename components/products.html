@@ -1,0 +1,102 @@
+<div class="content-container">
+    <!-- Product Display -->
+    <div class="products-grid">
+        <div class="row">
+
+            <div class="product-display col-4">
+                <div class="product-item selection">
+                    <a id="product-item-001" href="product_details.html" data-id="001">
+                        <img src="assets/product_imgs/product-03.png">
+                    </a>
+                    <h6 class="margin-top-10">Island Boys Forever Tee - Black</h6>
+                </div>
+            </div>
+            <div class="product-display col-4">
+                <div class="product-item selection">
+                    <a id="product-item-002" href="#" data-id="002">
+                        <img src="assets/product_imgs/product-03.png">
+                    </a>
+                    <h6 class="margin-top-10">Island Boys Forever Tee - Black</h6>
+                </div>
+            </div>
+            <div class="product-display col-4">
+                <div class="product-item selection">
+                    <a id="product-item-003" href="#" data-id="003">
+                        <img src="assets/product_imgs/product-03.png">
+                    </a>
+                    <h6 class="margin-top-10">Island Boys Forever Tee - Black</h6>
+                </div>
+            </div>
+            <div class="product-display col-4">
+                <div class="product-item selection">
+                    <a id="product-item-004" href="#" data-id="004">
+                        <img src="assets/product_imgs/product-03.png">
+                    </a>
+                    <h6 class="margin-top-10">Island Boys Forever Tee - Black</h6>
+                </div>
+            </div>
+            <div class="product-display col-4">
+                <div class="product-item selection">
+                    <a id="product-item-005" href="#" data-id="005">
+                        <img src="assets/product_imgs/product-03.png">
+                    </a>
+                    <h6 class="margin-top-10">Island Boys Forever Tee - Black</h6>
+                </div>
+            </div>
+            <div class="product-display col-4">
+                <div class="product-item selection">
+                    <a id="product-item-006" href="#" data-id="006">
+                        <img src="assets/product_imgs/product-03.png">
+                    </a>
+                    <h6 class="margin-top-10">Island Boys Forever Tee - Black</h6>
+                </div>
+            </div>
+            <div class="product-display col-4">
+                <div class="product-item selection">
+                    <a id="product-item-007" href="#" data-id="007">
+                        <img src="assets/product_imgs/product-03.png">
+                    </a>
+                    <h6 class="margin-top-10">Island Boys Forever Tee - Black</h6>
+                </div>
+            </div>
+            <div class="product-display col-4">
+                <div class="product-item selection">
+                    <a id="product-item-008" href="#" data-id="008">
+                        <img src="assets/product_imgs/product-03.png">
+                    </a>
+                    <h6 class="margin-top-10">Island Boys Forever Tee - Black</h6>
+                </div>
+            </div>
+            <div class="product-display col-4">
+                <div class="product-item selection">
+                    <a id="product-item-009" href="#" data-id="009">
+                        <img src="assets/product_imgs/product-03.png">
+                    </a>
+                    <h6 class="margin-top-10">Island Boys Forever Tee - Black</h6>
+                </div>
+            </div>
+
+            
+            
+        </div>
+    </div>
+    <!-- Product Display -->              
+</div>
+
+<script>
+
+( function($) {
+        
+    $(window).on('load', function() {
+
+        $('.product-item.selection a').click(function(){
+            var prodID = $(this).data('id');
+            $('#content').load("components/product_details.html");
+            $('.product-details #product-img').attr('src', 'product-' + prodID + '.png');
+        });
+
+    });
+        
+} ) ( jQuery );
+
+</script>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NAIAX CO</title>
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/brands.min.css"></script>
+        <script>
+        ( function($) {
+        
+            $(document).ready(function(){
+                $('#sidebar').load("components/sidebar.html");
+            });
+
+        } ) ( jQuery );
+        </script>
+    </head>
+    <body>
+        
+        <div id="main" class="products-details-page">
+            <div class="main-row row">
+
+                <section id="sidebar">
+                    
+                </section>
+        
+                <section id="content">
+                    <div class="content-container">
+                        <!-- Product Display -->
+                        <div class="products-details">
+                            <div class="row">
+                    
+                                <div class="col-6">
+                                    <div class="section-img">
+                                        <img id="product-img" src="assets/product_imgs/product-001.png">
+                                    </div>
+                                    <div class="product-gallery">
+                                        <div class="product-gallery-list">
+                                            <div class="product-gallery-item">
+                                                <a href="#">
+                                                    <img src="assets/product_imgs/product-02.jpg">
+                                                </a>
+                                            </div>
+                                            <div class="product-gallery-item">
+                                                <a href="#">
+                                                    <img src="assets/product_imgs/product-001.png">
+                                                </a>
+                                            </div>
+                                            <div class="product-gallery-item">
+                                                <a href="#">
+                                                    <img src="assets/product_imgs/product-001.png">
+                                                </a>
+                                            </div>
+                                            <div class="product-gallery-item">
+                                                <a href="#">
+                                                    <img src="assets/product_imgs/product-001.png">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="section-details">
+                                        <div class="product-title">
+                                            <h3 class="uppercase margin-zero">
+                                                Street Boys Forever Tee - Black
+                                            </h3>
+                                            <h4 class="product-price uppercase margin-zero">P1200.00</h4>
+                                        </div>
+                                        <div class="product-options">
+                                            <div class="product-option op-colors">
+                                                <h6 class="uppercase margin-zero margin-bottom-10 opacity-half">Color</h6>
+                                                <div class="option-list">
+                                                    <button class="btn-sm option-color selected uppercase" value="black">Black</button>
+                                                    <button class="btn-sm option-color uppercase" value="white">White</button>
+                                                </div>
+                                            </div>
+                                            <div class="product-option op-size">
+                                                <h6 class="uppercase margin-zero margin-bottom-10 opacity-half">Size</h6>
+                                                <div class="option-list">
+                                                    <button class="btn-sm option-color selected uppercase" value="black">S</button>
+                                                    <button class="btn-sm option-color uppercase" value="white">M</button>
+                                                    <button class="btn-sm option-color uppercase" value="white">L</button>
+                                                    <button class="btn-sm option-color uppercase" value="white">XL</button>
+                                                </div>
+                                            </div>
+                                            <a class="btn btn-buy" href="#">Buy in Facebook</a>
+                                        </div>
+                                        <div class="product-info">
+                                            <p>Elastic waistband with poly drawcord</p>
+                                            <p>On-seam side pockets with exterior profile stitch</p>
+                                            <p>Back welt pocket with zip closure</p>
+                                            <p>Stussy stock logo embroidery on left leg</p>
+                                            <p>Unisex</p>
+                                            <p>100% Nylon</p>
+                                            <p>Lining: 100% Polyester Mesh</p>
+                                            <p>Imported</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <!-- Product Display -->              
+                    </div>
+                </section>
+
+            </div>
+        </div>
+
+        <div id="product-gallery-view">
+            <div class="gallery-view-container">
+                <img class="gallery-view-img" src="">
+            </div>
+            <button id="gallery-view-close">
+                <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_17_82)">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M20 0.5C31.0457 0.5 40 9.4543 40 20.5C40 31.5457 31.0457 40.5 20 40.5C8.95431 40.5 0 31.5457 0 20.5C0 9.4543 8.95431 0.5 20 0.5ZM13.929 12.0147C13.5384 11.6242 12.9052 11.6242 12.5146 12.0147C12.1241 12.4052 12.1241 13.0384 12.5146 13.4289L19.5857 20.5L12.5146 27.5711C12.1241 27.9616 12.1241 28.5948 12.5146 28.9853C12.9052 29.3758 13.5384 29.3758 13.929 28.9853L21 21.9142L28.071 28.9853C28.4616 29.3758 29.0948 29.3758 29.4854 28.9853C29.8759 28.5948 29.8759 27.9616 29.4854 27.5711L22.4143 20.5L29.4854 13.4289C29.8759 13.0384 29.8759 12.4052 29.4854 12.0147C29.0948 11.6242 28.4616 11.6242 28.071 12.0147L21 19.0858L13.929 12.0147Z" fill="black"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_17_82">
+                    <rect width="40" height="40" fill="black" transform="translate(0 0.5)"/>
+                    </clipPath>
+                    </defs>
+                </svg>
+            </button>
+        </div>
+        
+        <script src="scripts/scripts.js" defer></script>
+        
+
+    </body>
+</html>

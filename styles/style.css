@@ -1,0 +1,224 @@
+/* NAIAX CO Stylesheet */
+
+
+/* ----------------------------------------------- DEFAULTS ----------------------------------------------- */
+body { background-color: #fff;  margin: 0; padding: 0; }
+body * {  box-sizing: border-box; color: #000; font-family: "Poppins", sans-serif; }
+
+a { color: #000; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+ul { padding: 0; margin: 0; }
+li { list-style: none; padding: 15px 0; }
+
+.display-block { display: block; width: 100%; }
+.center { text-align: center; }
+
+.margin-zero { margin: 0 !important; }
+.margin-top-10 { margin: 10px 0 0 !important; }
+.margin-bottom-10 { margin: 0 0 10px !important; }
+.margin-bottom-30 { margin: 0 0 30px !important; }
+
+.padding-zero { padding: 0 !important; }
+
+.uppercase { text-transform: uppercase; }
+
+.opacity-half { opacity: 0.4; }
+
+h1, .h1 { font-size: 50px; line-height: 1.7em; }
+h2, .h2 { font-size: 40px; line-height: 1.7em; }
+h3, .h3 { font-size: 30px; line-height: 1.7em; }
+h4, .h4 { font-size: 24px; line-height: 1.7em; }
+h5, .h5 { font-size: 20px; line-height: 1.7em; }
+h6, .h6 { font-size: 18px; line-height: 1.7em; }
+
+button { cursor: pointer; }
+.btn { background-color: #000; border-radius: 60px; color: #fff; display: inline-block; font-size: 14px; font-weight: 700; padding: 20px 80px; text-align: center; }
+.btn:hover { text-decoration: none; }
+.btn-sm { background-color: #fff; border-radius: 60px; border: 1px solid rgba(0,0,0,0.2); color: rgba(0,0,0,0.4); display: inline-block; font-size: 14px; font-weight: 700; padding: 10px 30px; text-align: center; transition: 0.3s ease all; }
+.btn-sm:hover { background-color: #000; border: 1px solid rgba(0,0,0,1); color: #fff; }
+
+/* ----------------------------------------------- DEFAULTS ----------------------------------------------- */
+
+
+
+/* ----------------------------------------------- GRIDDING ----------------------------------------------- */
+.align-items-start { align-items: start; }
+.align-items-center { align-items: center; }
+.align-items-end { align-items: end; }
+
+.flex-start { justify-content:flex-start; }
+.space-between { justify-content: space-between; }
+.flex-end { justify-content:flex-end; }
+
+.align-items-start { align-items: flex-start; }
+.align-items-center { align-items: center; }
+.align-items-end { align-items: flex-end; }
+
+.justify-content-center { justify-content: center; }
+
+.fixed-width { display: block; width: 100%; max-width: 1230px; margin: auto; }
+.full-width { display: block; width: 100%; max-width: 100%; }
+.row { display: flex; flex-wrap: wrap; position: relative; width: 100%; max-width: 100%; }
+
+
+.col-12 { width: 100%; max-width: calc(100% / 12 * 12); flex: 0 0 100%; padding: 15px; }
+.col-9 { width: 100%; max-width: calc(100% / 12 * 9); flex: 0 0 calc(100% / 12 * 9); padding: 15px; }
+.col-8 { width: 100%; max-width: calc(100% / 12 * 8); flex: 0 0 calc(100% / 12 * 8); padding: 15px; }
+.col-6 { width: 100%; max-width: calc(100% / 12 * 6); flex: 0 0 calc(100% / 12 * 6); padding: 15px; }
+.col-5 { width: 100%; max-width: calc(100% / 5); flex: 0 0 calc(100% / 5); padding: 15px; }
+.col-4 { width: 100%; max-width: calc(100% / 12 * 4); flex: 0 0 calc(100% / 12 * 4); padding: 15px; }
+.col-3 { width: 100%; max-width: calc(100% / 12 * 3); flex: 0 0 calc(100% / 12 * 3); padding: 15px; }
+.col-2 { width: 100%; max-width: calc(100% / 12 * 2); flex: 0 0 calc(100% / 12 * 2); padding: 15px; }
+
+/* Large Below */
+@media ( max-width: 1440px ) {
+    .fixed-width { max-width: 1080px; }
+}
+@media ( max-width: 1366px ) {
+    .fixed-width { max-width: 992px; }
+    .col-2 { width: 100%; max-width: calc(100% / 12 * 4); flex: 0 0 calc(100% / 12 * 4); }
+}
+/* Medium Below */
+@media ( max-width: 1240px ) {
+    .fixed-width { max-width: 768px; }
+    .col-6 { width: 100%; max-width: calc(100% / 12 * 12); flex: 0 0 calc(100% / 12 * 12); }
+    .col-4 { width: 100%; max-width: calc(100% / 12 * 12); flex: 0 0 calc(100% / 12 * 12); }
+    .col-3 { width: 100%; max-width: calc(100% / 12 * 6); flex: 0 0 calc(100% / 12 * 6); }
+    .col-2 { width: 100%; max-width: calc(100% / 12 * 6); flex: 0 0 calc(100% / 12 * 6); }
+}
+@media ( max-width: 1024px ) {
+    .fixed-width { max-width: 80%; }
+}
+/* Small Below */
+@media ( max-width: 667px ) {
+    .fixed-width { max-width: calc(100% - 60px); }
+    .col-12 { padding: 10px; }
+    .col-6 { padding: 10px; }
+    .col-4 { padding: 10px; }
+    .col-3 { padding: 10px; }
+    .col-2 { padding: 10px; }
+}
+@media ( max-width: 567px ) {
+    .fixed-width { max-width: calc(100% - 30px); }
+}
+/* ----------------------------------------------- GRIDDING ----------------------------------------------- */
+
+
+
+/* ----------------------------------------------- ICONS ----------------------------------------------- */
+i { color: #000; }
+.fa { color: #000; font-size: 14px; font-family: "Font Awesome 6 Brands"; }
+
+
+/* ----------------------------------------------- ICONS ----------------------------------------------- */
+
+
+
+/* ----------------------------------------------- SIDEBAR ----------------------------------------------- */
+#sidebar { width: 100%; max-width: 405px; padding: 70px 100px; height: 100vh; }
+
+#sidebar .menu-wrap > nav > ul > li { padding: 10px 0; }
+#sidebar .menu-wrap > nav > ul > li > a { font-size: 20px; font-weight: 700; text-transform: uppercase; }
+
+#sidebar .contact-wrap { padding: 50px 0; }
+#sidebar ul.contact-details { width: 100%; padding: 0 0 30px; }
+#sidebar ul.contact-details > li > a { display: flex; align-items: center; height: 20px; }
+#sidebar ul.contact-details > li > a > i.cd-icon { display: inline-block; width: 20px; height: 20px; padding: 0; margin: 0 10px 0 0; }
+#sidebar ul.contact-details > li > a > i.cd-icon > svg { width: 20px; height: 20px; }
+#sidebar ul.contact-details > li > a > p { display: inline-block; }
+
+#sidebar ul.social-media { display: flex; }
+#sidebar ul.social-media > li > a > i.sm-icon { border: 1px solid rgba(0,0,0,0.2); border-radius: 100%; display: block; width: 36px; height: 36px; padding: 7px; margin: 0 15px 0 0; }
+
+#sidebar .copyright-wrap { position: absolute; left: 100px; bottom: 40px; font-size: 14px; }
+
+/* ----------------------------------------------- SIDEBAR ----------------------------------------------- */
+
+
+
+/* ----------------------------------------------- CONTENT ----------------------------------------------- */
+#content { padding: 75px 75px 0 0; width: 100%; max-width: calc(100% - 405px); height: 100vh; overflow-y: scroll; overflow-x: hidden; }
+
+#content::-webkit-scrollbar { width: 6px; }
+#content::-webkit-scrollbar-track { background-color: rgba(0,0,0,0.1); }
+#content::-webkit-scrollbar-thumb { background-color: rgba(0,0,0,0.4); border: inset 2px solid rgba(0,0,0,0.1); }
+
+#content .content-container { background-color: rgba(0,0,0,0); height: 100%; }
+
+/* ----------------------------------------------- CONTENT ----------------------------------------------- */
+
+
+/* ----------------------------------------------- DRESS LOOK ----------------------------------------------- */
+.products-masonry .product-display { width: 100%; position: relative; padding-top: 0px; padding-bottom: 0px; }
+.products-masonry .product-display:nth-child(even) { padding-top: 75px; }
+.products-masonry .product-display .product-item { cursor: pointer; width: 100%; position: relative; padding: 0 0 30px; }
+.products-masonry .product-display .product-item a { display: block; width: 100%; }
+.products-masonry .product-display .product-item img { width: 100%; transition: 0.4s ease all; }
+.products-masonry .product-display .product-item:hover img { box-shadow: 15px 15px 30px rgba(0,0,0,0.15); transform: scale(1.02); }
+
+#product-item-view { background-color: rgba(0,0,0,0.9); display: none; width: 100vw; height: 100vh; position: absolute; top: 0; left: 0; z-index: 9; overflow: none; }
+#product-item-view .item-view-container { display: block; width: 100%; height: 100%; }
+#product-item-view .item-view-container img.item-view-img { position: absolute; top: 50%; left: 50%; transform: translateY(-50%) translateX(-50%) scale(1.4); }
+#product-item-view #item-view-close { background-color: transparent; border-radius: 0; border: 0; box-shadow: 0 0 0 transparent; cursor: pointer; padding: 0px; position: absolute; top: 60px; right: 60px; width: 40px; height: 40px; }
+
+/* ----------------------------------------------- DRESS LOOK ----------------------------------------------- */
+
+
+/* ----------------------------------------------- PRODUCTS ----------------------------------------------- */
+.products-grid .product-display { width: 100%; position: relative; padding-top: 0px; padding-bottom: 0px; }
+.products-grid .product-display .product-item { width: 100%; position: relative; padding: 0 0 30px; }
+.products-grid .product-display .product-item a { display: block; width: 100%; }
+.products-grid .product-display .product-item a img { width: 100%; transition: 0.4s ease all; }
+.products-grid .product-display .product-item:hover a img { box-shadow: 15px 15px 30px rgba(0,0,0,0.15); transform: scale(1.02); }
+
+/* ----------------------------------------------- PRODUCTS ----------------------------------------------- */
+
+
+/* ----------------------------------------------- PRODUCT DETAILS ----------------------------------------------- */
+.products-details-page .products-details { padding: 37px 0 0; width: 100%; max-width: 1215px; margin: auto; }
+.products-details-page #product-img { cursor: pointer; display: block; width: 100%; }
+.products-details-page .section-details { padding: 0 0 0 45px; }
+.products-details-page .product-title { padding: 0 0 30px; }
+.products-details-page .product-option { display: block; padding: 0 0 30px; width: 100%; position: relative; }
+.products-details-page .product-option .option-list { display: flex; width: 100%; }
+.products-details-page .product-option .option-list > button { margin-right: 15px; }
+.products-details-page .product-info { padding: 30px 0; }
+.products-details-page .product-info p { opacity: 0.6; margin: 5px 0; }
+
+.products-details-page .product-gallery { padding: 30px 0; }
+.products-details-page .product-gallery .product-gallery-list { display: flex; justify-content: space-between; position: relative; width: 100%; }
+.products-details-page .product-gallery .product-gallery-list .product-gallery-item { display: block; padding-top: calc(25% - 10px); position: relative; width: calc(100% / 4 - 10px); overflow: hidden; }
+.products-details-page .product-gallery .product-gallery-list .product-gallery-item a { display: block; position: absolute; top: 0; left: 0; }
+.products-details-page .product-gallery .product-gallery-list .product-gallery-item a img { width: 100%; }
+
+#product-gallery-view { background-color: #fff; display: none; width: 100vw; height: 100vh; position: absolute; top: 0; left: 0; z-index: 9; overflow: hidden; }
+#product-gallery-view .gallery-view-container { display: block; width: 100%; height: 100%; }
+#product-gallery-view .gallery-view-container img.gallery-view-img { position: absolute; top: 50%; left: 50%; transform: translateY(-50%) translateX(-50%) scale(1.1); }
+#product-gallery-view #gallery-view-close { background-color: transparent; border-radius: 0; border: 0; box-shadow: 0 0 0 transparent; cursor: pointer; padding: 0px; position: absolute; top: 60px; right: 60px; width: 40px; height: 40px; }
+
+/* ----------------------------------------------- PRODUCT DETAILS ----------------------------------------------- */
+
+/* ----------------------------------------------- BRAND STORY ----------------------------------------------- */
+.story-section { padding: 75px 0; width: 100%; max-width: 915px; margin: auto; }
+.story-section .section-img  img { width: 100%; }
+
+/* ----------------------------------------------- BRAND STORY ----------------------------------------------- */
+
+
+/* ----------------------------------------------- CONTACT ----------------------------------------------- */
+.contact-section { padding: 75px 0; width: 100%; max-width: 915px; margin: auto; }
+.contact-section form#contact .input { font-size: 16px; width: 100%; max-width: 500px; height: 40px; padding: 0 15px; }
+.contact-section form#contact textarea.input { height: 150px; }
+form#contact .form-button button { border-radius: 4px; border: 1px solid #000; padding: 10px 60px; }
+
+/* ----------------------------------------------- CONTACT ----------------------------------------------- */
+
+
+/* ----------------------------------------------- LABEL ----------------------------------------------- */
+
+/* Styles here... */
+
+/* ----------------------------------------------- LABEL ----------------------------------------------- */
+
+
